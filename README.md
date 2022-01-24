@@ -51,4 +51,24 @@ Data from 190 participants (49% divorced and 51% married) is available in the Dr
 ## Laboratorio de inteligencia artificial 
 
 
+### Práctica_01_Fuzzy_Logic
+
+Sistema Basado en Lógica Difusa capaz de dar una valoración entre 0 y 100 de los jugadores de baloncesto a partir de las características del fichero de datos que puede encontrar en el directorio Drive de materiales.
+
+Fuente de los datos: https://www.kaggle.com/jacobbaruch/basketball-players-stats-per-season-49-leagues
+
+Deberá filtrar los datos y quedarse con aquellos de la última temporada, para evitar tener jugadores repetidos.
+Es deseable el sistema sea capaz de asignar una valoración cercana a 0 (en el caso del peor jugador), así como cercana a 100 (en el caso del mejor jugador).
+También es deseable que no existan muchos jugadores con puntuación similar.
+
+### Práctica_02_Algoritmo_Genético
+
+- Implementar la función Rastrigin como función objetivo (sustituyendo a onemax en el ejemplo dado).
+- Definir una función de inicialización que genere un número determinado (n_pop) de individuos de 10 elemenos reales aleatorios en el rango [-5.12, 5,12].
+- Definir una función de Selección de Torneo (como la dada en el ejemplo).
+- Definir un operador de cruce aritmético que, dados dos individuos, genere dos hijos aleatorios en el rango definido por sus padres.Es decir si un padre tiene, en una posición el valor 3, y el otro el valor -1, ambos hijos tendrán en esa posición un valor aleatorio en el rango [-1,3].
+- Los hijos se generarán con una probabilidad r_cross.
+- Definir un operador de mutación que, dado un hijo, para cada posición, y con una probabilidad r_mut cambie el valor por un valor aleatorio en el rango de la función.
+- Implemente y pruebe la función genetic_algorithm para 1000 iteraciones.
+
 
